@@ -19,9 +19,25 @@
 #
 #     print(f"wpisano imię {name.title()}")
 #
-num = 0
-while num < 100:
-    num+=1
-    if num % 3 == 0 or num % 5 == 0:
-        continue
-    print(num)
+from math import sqrt
+
+# num = 0
+# while num < 100:
+#     num+=1
+#     if num % 3 == 0 or num % 5 == 0:
+#         continue
+#     print(num)
+counter = 0
+for n in range(2,100):
+    is_prime = True
+    s = int(sqrt(n))
+
+    for i in range(2,s +1):
+        if n%i ==0:
+            is_prime = False
+            break
+    if is_prime:
+        counter+=1
+        print(f"{n}: jest pierwsza")
+
+print(f"liczb pierwszych jest {counter}")
