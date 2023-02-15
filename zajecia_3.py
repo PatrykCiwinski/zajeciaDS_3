@@ -52,7 +52,19 @@ from time import time
 #     i+=1
 
 
-sum = 0
-for i in range(1,101):
-    sum+=i
-print(sum)
+# sum = 0
+# for i in range(1,101):
+#     sum+=i
+# print(s)
+
+bakterie = 1
+czas=0
+
+
+while bakterie<=1000_000_000:
+    bakterie*=2
+    czas+=1
+
+print(f"mamy {bakterie} w {czas} godzin")
+
+
