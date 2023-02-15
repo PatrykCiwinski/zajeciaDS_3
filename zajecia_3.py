@@ -1,7 +1,7 @@
 letter= input("Podaj literę: ")
 i = 0
 
-while letter !="9":
+while letter !="":
     print(letter)
     i+=1
     if i == 5:
