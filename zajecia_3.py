@@ -27,17 +27,32 @@ from math import sqrt
 #     if num % 3 == 0 or num % 5 == 0:
 #         continue
 #     print(num)
-counter = 0
-for n in range(2,100):
-    is_prime = True
-    s = int(sqrt(n))
+from time import time
+#
+# counter = 0
+# for n in range(2,100):
+#     is_prime = True
+#     s = int(sqrt(n))
+#
+#     for i in range(2,s +1):
+#         if n%i ==0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         counter+=1
+#         print(f"{n}: jest pierwsza")
+#
+# print(f"liczb pierwszych jest {counter}")
+#
+# i=0
+# x=40
+#
+# while (expression:=5*x*i+1)<1000:
+#     print(f"{i}: {expression}")
+#     i+=1
 
-    for i in range(2,s +1):
-        if n%i ==0:
-            is_prime = False
-            break
-    if is_prime:
-        counter+=1
-        print(f"{n}: jest pierwsza")
 
-print(f"liczb pierwszych jest {counter}")
+sum = 0
+for i in range(1,101):
+    sum+=i
+print(sum)
