@@ -8,13 +8,20 @@
 #         letter=input("Podaj kolejną: ")
 #         i =0
 # print("bye bye")
-
-st = "\nPodaj imie"
-st +="\n(Wpisz q aby zakończyć)"
-
-while True:
-    name = input(st)
-    if name == "q":
-        break
-
-    print(f"wpisano imię {name.title()}")
+#
+# st = "\nPodaj imie"
+# st +="\n(Wpisz q aby zakończyć)"
+#
+# while True:
+#     name = input(st)
+#     if name == "q":
+#         break
+#
+#     print(f"wpisano imię {name.title()}")
+#
+num = 0
+while num < 100:
+    num+=1
+    if num % 3 == 0 or num % 5 == 0:
+        continue
+    print(num)
